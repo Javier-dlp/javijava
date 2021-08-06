@@ -1,5 +1,4 @@
 # This is a basic workflow to help you get started with Actions
-
 name: CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -20,7 +19,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v1
         with:
-          channel: 'beta'
+          channel: 'dev'
 
       - name: Enable Flutter web
         run: flutter config --enable-web
@@ -29,9 +28,10 @@ jobs:
         run: flutter pub get
 
       - name: Build web
-        run: flutter build web --release  --no-sound-null-safety
+        run: flutter build web --no-sound-null-safety --release
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build/web
