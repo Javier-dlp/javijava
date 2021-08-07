@@ -57346,7 +57346,7 @@ Ka(a){var s,r=null,q=H.b([],t.E)
 for(s=1;s<6;++s)q.push(s<=a?new L.iu(C.BU,16,$.z4(),r,r,r):new L.iu(C.BW,16,r,r,r,r))
 return T.me(q,C.aP,C.c4,C.aY)}}
 S.TB.prototype={
-$0(){this.a.$1("https://www.linkedin.com/in/javier-de-la-pe\xf1a-2b801a")},
+$0(){this.a.$1("https://www.linkedin.com/in/javier-de-la-pena")},
 $S:0}
 S.TC.prototype={
 $0(){this.a.$1("https://"+new O.CC(H.b(["javier.pfayos@gmail.com"],t.s),"From javijava.com").h(0))},
