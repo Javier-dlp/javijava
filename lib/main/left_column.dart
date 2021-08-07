@@ -27,8 +27,6 @@ class LeftColumn extends StatelessWidget {
           const Text(""),
           const Text(""),
           const Text(""),
-          const Text(""),
-          const Text(""),
           getSkills(),
         ],
       )
@@ -50,8 +48,8 @@ class LeftColumn extends StatelessWidget {
             ),
           ),
         ),
-        TextUtils.getText("G'DAY, I'M JAVIER DE LA PEÑA", fontSize: 30.0, bold: true, textAlign: TextAlign.center),
-        TextUtils.getText("Sr. Software Engineer", fontSize: 24.0),
+        TextUtils.getText("G'DAY, I'M JAVIER DE LA PEÑA", fontSize: TextUtils.superTitleSIze, bold: true, textAlign: TextAlign.center),
+        TextUtils.getText("Sr. Software Engineer", fontSize: TextUtils.titleSize),
       ]
     );
   }
@@ -63,7 +61,7 @@ class LeftColumn extends StatelessWidget {
         InkWell(
           child: SvgPicture.network("https://upload.wikimedia.org/wikipedia/commons/c/c9/Linkedin.svg", height: 50,),
           onTap: () {
-            var url = "https://www.linkedin.com/in/javier-de-la-peña-2b801a";
+            var url = "https://www.linkedin.com/in/javier-de-la-pena";
             call(url);
           },
         ),

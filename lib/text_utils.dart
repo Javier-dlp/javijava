@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class TextUtils {
 
-  static const double textSize = 16, titleSize = 22;
+  static const double textSize = 14, titleSize = 16, superTitleSIze = 20;
 
   static Color darkBlue = Colors.lightBlue.shade800;
 

@@ -29,19 +29,30 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
 
+    var row = Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        LeftColumn(size.width*.3),
+        Spacer(),
+        RightColumn(size.width*.6),
+      ],
+    );
+
+    var column = ListView(
+      children: [
+        LeftColumn(size.width),
+        Text(""),
+        Text(""),
+        RightColumn(size.width),
+      ],
+    );
+
+
     return Scaffold(
       body: Center(
-        // heightFactor: 1.2,
-        // widthFactor: 1.2,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            LeftColumn(size.width*.3),
-            Spacer(),
-            RightColumn(size.width*.6),
-          ],
-        ),
+        heightFactor: 1.2,
+        child: size.width < 600 ? column : row,
       ),
     );
   }

@@ -108,7 +108,7 @@ IT Professional with over 10 years of experience specialized on JVM BE technolog
   Widget getCard(TimelineItemPosition position, String title, Map<String, String> companiesByDate) {
     var textAlign = position == TimelineItemPosition.left ? TextAlign.right : TextAlign.left;
     List<Widget> children = [
-      TextUtils.getText(title, bold: true, fontSize: 24, textAlign: textAlign)
+      TextUtils.getText(title, bold: true, fontSize: TextUtils.titleSize, textAlign: textAlign)
     ];
     children.addAll(companiesByDate.entries.map((e) => mapEntry(e, textAlign)).toList());
 
@@ -120,8 +120,8 @@ IT Professional with over 10 years of experience specialized on JVM BE technolog
   }
 
   Widget mapEntry(MapEntry<String, String> companyByDate, TextAlign textAlign) {
-    var dateStyle = TextStyle(fontSize: TextUtils.textSize, fontStyle: FontStyle.normal, fontWeight: FontWeight.normal,);
-    var companyStyle = TextStyle(fontSize: TextUtils.titleSize-4, fontStyle: FontStyle.normal, fontWeight: FontWeight.w300);
+    var dateStyle = TextStyle(fontSize: TextUtils.textSize, fontStyle: FontStyle.normal, fontWeight: FontWeight.normal, color: Colors.black);
+    var companyStyle = TextStyle(fontSize: TextUtils.titleSize, fontStyle: FontStyle.normal, fontWeight: FontWeight.w300, color: Colors.black);
 
     var text;
     if (textAlign == TextAlign.right) {
