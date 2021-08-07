@@ -57010,15 +57010,15 @@ F.CM.prototype={
 Z(a,b){return new S.u4(new F.CN(null),"Javier de la Pe\xf1a",X.aek(null,C.h7),null)}}
 F.CN.prototype={
 Z(a,b){var s=null,r=b.ao(t.w).f.a.a
-return new M.vg(T.OK(T.md(H.b([new S.Cm(r*0.3,s),new R.Fw(s),new K.EG(r*0.6,s)],t.E),C.aO,C.ep,C.aW),s,s),s)}}
+return new M.vg(T.OK(T.md(H.b([new S.Cm(r*0.3,s),new R.Fw(s),new K.EG(r*0.6,s)],t.E),C.aO,C.ep,C.aW),1.2,s),s)}}
 S.Cm.prototype={
 Z(a,b){var s=null,r=t.E
-return M.dD(s,B.a8v(H.b([T.a7G(H.b([M.dD(s,s,s,s,new S.i6(C.l,new X.AR(new L.rg("assets/photo.jpg"),C.ip),s,s,s,s,C.b0),200,s,s,200),O.mI("G'DAY, I'M JAVIER DE LA PE\xd1A",!0,C.l,30,C.cn),O.mI("Sr. Software Engineer",!1,C.l,24,C.aG)],r),C.aO),C.bh,this.Jx(),C.bh,C.bh,C.bh,C.bh,C.bh,C.bh,C.bh,this.JY()],r),s,!0),s,new S.aE(0,this.c,0,1/0),s,s,s,s,s)},
+return M.dD(s,B.a8v(H.b([T.a7G(H.b([M.dD(s,s,s,s,new S.i6(C.l,new X.AR(new L.rg("assets/photo.jpg"),C.ip),s,s,s,s,C.b0),200,s,s,200),O.mI("G'DAY, I'M JAVIER DE LA PE\xd1A",!0,C.l,20,C.cn),O.mI("Sr. Software Engineer",!1,C.l,16,C.aG)],r),C.aO),C.bh,this.Jx(),C.bh,C.bh,C.bh,C.bh,C.bh,C.bh,C.bh,this.JY()],r),s,!0),s,new S.aE(0,this.c,0,1/0),s,s,s,s,s)},
 Jx(){var s=null,r=$.ahw()
 $.ab0().toString
 return T.md(H.b([R.a8j(!1,!0,new G.vT(50,new D.iF(r,"https://upload.wikimedia.org/wikipedia/commons/c/c9/Linkedin.svg",s,s),s,s),s,!0,s,s,s,s,s,s,s,s,s,new S.Tw(this),s),M.dD(s,s,s,s,s,s,s,s,25),R.a8j(!1,!0,new L.is(C.BW,60,s,s,s,s),s,!0,s,s,s,s,s,s,s,s,s,new S.Tx(this),s)],t.E),C.aO,C.ep,C.aW)},
 JY(){var s=null,r=t.E
-return T.md(H.b([new T.o2(1,C.fy,T.a7G(H.b([O.mI("Skills",!0,$.z_(),22,C.aG),L.vY("",s,s),M.dD(s,new A.lO(new S.Ty(this),s),s,s,s,s,s,s,s)],r),C.bO),s)],r),C.aO,C.ep,C.aW)},
+return T.md(H.b([new T.o2(1,C.fy,T.a7G(H.b([O.mI("Skills",!0,$.z_(),16,C.aG),L.vY("",s,s),M.dD(s,new A.lO(new S.Ty(this),s),s,s,s,s,s,s,s)],r),C.bO),s)],r),C.aO,C.ep,C.aW)},
 $1(a){return this.Jm(a)},
 Jm(a){var s=0,r=P.a4(t.H)
 var $async$$1=P.a0(function(b,c){if(b===1)return P.a1(c,r)
@@ -57033,7 +57033,7 @@ break
 case 4:H.h("Could not launch "+H.c(a))
 case 3:return P.a2(null,r)}})
 return P.a3($async$$1,r)},
-hh(a,b){var s=null,r=H.b([M.dD(C.f_,O.mI(a,!1,C.l,16,C.aG),s,s,s,35,s,new V.bz(0,0,10,0),s)],t.zp)
+hh(a,b){var s=null,r=H.b([M.dD(C.f_,O.mI(a,!1,C.l,12,C.aG),s,s,s,35,s,new V.bz(0,0,10,0),s)],t.zp)
 if(b>0)r.push(M.dD(s,this.K0(b),s,s,s,35,s,s,s))
 return new S.fP(r)},
 i1(a){return this.hh(a,0)},
@@ -57056,14 +57056,14 @@ p=o}return p},
 $S:346}
 K.EG.prototype={
 Z(a,b){var s=this,r=null,q=t.E,p=t.N
-return M.dD(r,B.a8v(H.b([T.a7G(H.b([O.mI("Summary",!0,$.z_(),22,C.aG),L.vY("",r,r),O.mI("IT Professional with over 10 years of experience specialized on JVM BE technologies with focus on: micro-service architecture, supporting apps, and application lifecycle.\n\nI am passionate about helping teams and companies to move into faster, more reliable iterations.",!1,C.l,16,C.aG)],q),C.bO),L.vY("",r,r),L.vY("",r,r),O.mI("Experience",!0,$.z_(),22,C.aG),L.vY("",r,r),T.md(H.b([new T.o2(1,C.fy,M.dD(r,L.apl(H.b([s.lJ(C.eM,"Full stack Developer",P.aI(["2021-Now","Freelance Movie Recommender App"],p,p)),s.lJ(C.eL,"Senior Software Engineer",P.aI(["2017-2020","Auto1 Group"],p,p)),s.lJ(C.eM,"Technical Leader",P.aI(["2017","bonial.com"],p,p)),s.lJ(C.eL,"Senior Developer",P.aI(["2015-2016","bonial.com","2012-2014","Protec Mobile"],p,p)),s.lJ(C.eM,"Junior Developer",P.aI(["2008-2010","Alten","2007-2008","Tecnocom"],p,p))],t.F_),!0),r,new S.aE(0,770,0,1/0),r,r,r,new V.bz(0,0,75,0),r),r)],q),C.bO,C.c4,C.aW)],q),r,!0),r,new S.aE(0,s.c,0,1/0),r,r,r,r,r)},
+return M.dD(r,B.a8v(H.b([T.a7G(H.b([O.mI("Summary",!0,$.z_(),16,C.aG),L.vY("",r,r),O.mI("IT Professional with over 10 years of experience specialized on JVM BE technologies with focus on: micro-service architecture, supporting apps, and application lifecycle.\n\nI am passionate about helping teams and companies to move into faster, more reliable iterations.",!1,C.l,12,C.aG)],q),C.bO),L.vY("",r,r),L.vY("",r,r),O.mI("Experience",!0,$.z_(),16,C.aG),L.vY("",r,r),T.md(H.b([new T.o2(1,C.fy,M.dD(r,L.apl(H.b([s.lJ(C.eM,"Full stack Developer",P.aI(["2021-Now","Freelance Movie Recommender App"],p,p)),s.lJ(C.eL,"Senior Software Engineer",P.aI(["2017-2020","Auto1 Group"],p,p)),s.lJ(C.eM,"Technical Leader",P.aI(["2017","bonial.com"],p,p)),s.lJ(C.eL,"Senior Developer",P.aI(["2015-2016","bonial.com","2012-2014","Protec Mobile"],p,p)),s.lJ(C.eM,"Junior Developer",P.aI(["2008-2010","Alten","2007-2008","Tecnocom"],p,p))],t.F_),!0),r,new S.aE(0,770,0,1/0),r,r,r,new V.bz(0,0,75,0),r),r)],q),C.bO,C.c4,C.aW)],q),r,!0),r,new S.aE(0,s.c,0,1/0),r,r,r,r,r)},
 lJ(a,b,c){var s=null,r=this.Jv(a,b,c)
 return new Q.pS(new L.is(C.BS,s,s,s,s,s),$.z_(),r,a)},
-Jv(a,b,c){var s=a===C.eL?C.bE:C.aG,r=H.b([O.mI(b,!0,C.l,24,s)],t.E)
+Jv(a,b,c){var s=a===C.eL?C.bE:C.aG,r=H.b([O.mI(b,!0,C.l,14,s)],t.E)
 C.b.F(r,c.geT(c).h3(0,new K.X8(this,s),t.l7).hY(0))
 return B.a8v(r,new V.bz(0,20,0,20),!0)}}
 K.X8.prototype={
-$1(a){var s,r,q=null,p=this.b,o=A.mG(q,q,q,q,q,q,q,q,q,q,q,16,C.bt,C.B,q,q,!0,q,q,q,q,q,q,q,q),n=A.mG(q,q,q,q,q,q,q,q,q,q,q,18,C.bt,C.fz,q,q,!0,q,q,q,q,q,q,q,q),m=t.VO
+$1(a){var s,r,q=null,p=this.b,o=A.mG(q,q,q,q,q,q,q,q,q,q,q,12,C.bt,C.B,q,q,!0,q,q,q,q,q,q,q,q),n=A.mG(q,q,q,q,q,q,q,q,q,q,q,12,C.bt,C.fz,q,q,!0,q,q,q,q,q,q,q,q),m=t.VO
 if(p===C.bE){s=a.gq(a)
 r=Q.kr(H.b([Q.kr(q,q,"   "),Q.kr(q,o,a.gdt(a))],m),n,s)}else{s=a.gdt(a)
 r=Q.kr(H.b([Q.kr(q,q,"   "),Q.kr(q,n,a.gq(a))],m),o,s)}return T.a94(q,q,C.dl,!0,q,r,p,q,q,1,C.bg)},
