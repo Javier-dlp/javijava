@@ -57364,11 +57364,11 @@ a2(a,b){var s=this,r=null,q=t.E,p=t.N
 return M.dE(r,B.TL(H.b([T.a7P(H.b([O.mL("Summary",!0,$.z4(),16,C.aH),L.mG("",r,r),O.mL("IT Professional with over 10 years of experience specialized on JVM BE technologies with focus on: micro-service architecture, supporting apps, and application lifecycle.\n\nI am passionate about helping teams and companies to move into faster, more reliable iterations.",!1,C.l,14,C.aH)],q),C.bP),L.mG("",r,r),L.mG("",r,r),O.mL("Experience",!0,$.z4(),16,C.aH),L.mG("",r,r),T.me(H.b([new T.o5(1,C.fz,M.dE(r,L.aps(H.b([s.lM(C.eN,"Full stack Developer",P.aI(["2021-Now","Freelance Movie Recommender App"],p,p)),s.lM(C.eM,"Senior Software Engineer",P.aI(["2017-2020","Auto1 Group"],p,p)),s.lM(C.eN,"Technical Leader",P.aI(["2017","bonial.com"],p,p)),s.lM(C.eM,"Senior Developer",P.aI(["2015-2016","bonial.com","2012-2014","Protec Mobile"],p,p)),s.lM(C.eN,"Junior Developer",P.aI(["2008-2010","Alten","2007-2008","Tecnocom"],p,p))],t.F_),!0),r,new S.aF(0,770,0,1/0),r,r,r,new V.bB(0,0,75,0),r),r)],q),C.bP,C.c5,C.aY)],q),r,!0),r,new S.aF(0,s.c,0,1/0),r,r,r,r,r)},
 lM(a,b,c){var s=null,r=this.JF(a,b,c)
 return new Q.pV(new L.iu(C.BT,s,s,s,s,s),$.z4(),r,a)},
-JF(a,b,c){var s=a===C.eM?C.bF:C.aH,r=H.b([O.mL(b,!0,C.l,14,s)],t.E)
+JF(a,b,c){var s=a===C.eM?C.bF:C.aH,r=H.b([O.mL(b,!0,C.l,16,s)],t.E)
 C.b.G(r,c.geV(c).h4(0,new K.Xg(this,s),t.l7).hZ(0))
 return B.TL(r,new V.bB(0,20,0,20),!0)}}
 K.Xg.prototype={
-$1(a){var s,r,q=null,p=this.b,o=A.mJ(q,q,q,q,q,q,q,q,q,q,q,14,C.bv,C.B,q,q,!0,q,q,q,q,q,q,q,q),n=A.mJ(q,q,q,q,q,q,q,q,q,q,q,12,C.bv,C.fA,q,q,!0,q,q,q,q,q,q,q,q),m=t.VO
+$1(a){var s,r,q=null,p=this.b,o=A.mJ(q,q,q,q,q,q,q,q,q,q,q,14,C.bv,C.B,q,q,!0,q,q,q,q,q,q,q,q),n=A.mJ(q,q,q,q,q,q,q,q,q,q,q,16,C.bv,C.fA,q,q,!0,q,q,q,q,q,q,q,q),m=t.VO
 if(p===C.bF){s=a.gq(a)
 r=Q.kt(H.b([Q.kt(q,q,"   "),Q.kt(q,o,a.gdv(a))],m),n,s)}else{s=a.gdv(a)
 r=Q.kt(H.b([Q.kt(q,q,"   "),Q.kt(q,n,a.gq(a))],m),o,s)}return T.a9b(q,q,C.dl,!0,q,r,p,q,q,1,C.bi)},
