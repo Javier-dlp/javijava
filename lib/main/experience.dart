@@ -8,18 +8,21 @@ class Experience extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
+    var rightPadding = size.width*.1;
+
     return Container(
-        padding: EdgeInsets.only(right: 75),
-        child:  Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            TextUtils.getTitle("Experience"),
-            Text(""),
-            Timeline(
-              shrinkWrap: true,
-              children: getJobs(),
-            ),
-          ]
+      padding: EdgeInsets.only(right: rightPadding),
+      child:  Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          TextUtils.getTitle("Experience"),
+          Text(""),
+          Timeline(
+            shrinkWrap: true,
+            children: getJobs(),
+          ),
+        ]
       )
     );
   }

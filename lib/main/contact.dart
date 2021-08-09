@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:javijava/text_utils.dart';
-import 'package:mailto/mailto.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Contact extends StatelessWidget {
@@ -50,24 +49,27 @@ class Contact extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Spacer(flex: 5,),
         InkWell(
-          child: SvgPicture.network("https://upload.wikimedia.org/wikipedia/commons/c/c9/Linkedin.svg", height: 50,),
-          onTap: () {
-            var url = "https://www.linkedin.com/in/javier-de-la-pena";
-            call(url);
-          },
+          child: SvgPicture.network("https://upload.wikimedia.org/wikipedia/commons/c/c9/Linkedin.svg", height: 40,),
+          onTap: () => call("https://www.linkedin.com/in/javier-de-la-pena"),
         ),
-        Container(width: 25,),
+        Spacer(),
         InkWell(
-          child: Icon(Icons.email_outlined, size: 60.0,),
-          onTap: () {
-            var mailto = Mailto(
-                to: [ "javier.pfayos@gmail.com" ],
-                subject: "From javijava.com"
-            );
-            call("https://$mailto");
-          },
+          child: Icon(Icons.email_outlined, size: 50.0,),
+          onTap: () => call("mailto:javier.pfayos@gmail.com"),
         ),
+        Spacer(),
+        InkWell(
+          child: SvgPicture.network("https://upload.wikimedia.org/wikipedia/commons/a/ae/Github-desktop-logo-symbol.svg", height: 40,),
+          onTap: () => call("https://github.com/Javier-dlp/javijava"),
+        ),
+        Spacer(),
+        InkWell(
+          child: Icon(Icons.download, size: 50.0,),
+          onTap: () => call("https://github.com/Javier-dlp/javijava/raw/master/assets/Javier_de_la_Pena_CV.pdf"),
+        ),
+        Spacer(flex: 5,),
       ],
     );
   }

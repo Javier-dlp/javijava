@@ -41,6 +41,7 @@ class MyHomePage extends StatelessWidget {
 
   ListView getListView() {
     var column = ListView(
+      padding: EdgeInsets.all(10),
       children: [
         Contact(),
         Text(""),
