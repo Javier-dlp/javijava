@@ -4,59 +4,23 @@ import 'package:javijava/text_utils.dart';
 import 'package:timeline_list/timeline.dart';
 import 'package:timeline_list/timeline_model.dart';
 
-class RightColumn extends StatelessWidget {
-
-  final double width;
-
-  RightColumn(this.width);
+class Experience extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: BoxConstraints(maxWidth: width),
-      child: ListView(
-        shrinkWrap: true,
-        children: [
-          getSummary(),
-          Text(""),
-          Text(""),
-          TextUtils.getTitle("Experience"),
-          Text(""),
-          getExperience(width),
-        ]
-      )
-    );
-  }
-
-  Widget getSummary() {
-    return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          TextUtils.getTitle("Summary"),
-          Text(""),
-          TextUtils.getText("""
-IT Professional with over 10 years of experience specialized on JVM BE technologies with focus on: micro-service architecture, supporting apps, and application lifecycle.
-\nI am passionate about helping teams and companies to move into faster, more reliable iterations."""),
-        ]
-    );
-  }
-
-  Widget getExperience(double width) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Flexible(
-          child: Container(
-            constraints: BoxConstraints(maxWidth: 770),
-            padding: EdgeInsets.only(right: 75),
-            child: Timeline(
+        padding: EdgeInsets.only(right: 75),
+        child:  Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            TextUtils.getTitle("Experience"),
+            Text(""),
+            Timeline(
               shrinkWrap: true,
               children: getJobs(),
             ),
-          )
-        )
-      ]
+          ]
+      )
     );
   }
 

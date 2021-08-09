@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:javijava/main/left_column.dart';
-import 'package:javijava/main/right_column.dart';
+import 'package:javijava/main/contact.dart';
+import 'package:javijava/main/experience.dart';
+import 'package:javijava/main/skills.dart';
+import 'package:javijava/main/summary.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,32 +31,65 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
 
+    return Scaffold(
+      body: Center(
+        heightFactor: 1.2,
+        child: size.width < 600 ? getListView() : getGridView(size),
+      ),
+    );
+  }
+
+  ListView getListView() {
+    var column = ListView(
+      children: [
+        Contact(),
+        Text(""),
+        Text(""),
+        Summary(),
+        Text(""),
+        Text(""),
+        Experience(),
+        Text(""),
+        Text(""),
+        Skills(),
+      ],
+    );
+    return column;
+  }
+
+  Row getGridView(Size size) {
     var row = Row(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        LeftColumn(size.width*.3),
+        Container(
+          width: size.width*.3,
+          constraints: BoxConstraints(maxWidth: size.width*.3),
+          child: ListView(
+            children: [
+              Contact(),
+              Text(""),
+              Text(""),
+              Skills(CrossAxisAlignment.center),
+            ],
+          )
+        ),
         Spacer(),
-        RightColumn(size.width*.6),
+        Container(
+          width: size.width*.6,
+          child: ListView(
+            children: [
+              Text(""),
+              Summary(),
+              Text(""),
+              Experience(),
+            ],
+          )
+        ),
+        Spacer(),
       ],
     );
-
-    var column = ListView(
-      children: [
-        LeftColumn(size.width),
-        Text(""),
-        Text(""),
-        RightColumn(size.width),
-      ],
-    );
-
-
-    return Scaffold(
-      body: Center(
-        heightFactor: 1.2,
-        child: size.width < 600 ? column : row,
-      ),
-    );
+    return row;
   }
 
 }
