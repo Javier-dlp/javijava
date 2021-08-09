@@ -1,5 +1,5 @@
 name: javijava
-description: A new Flutter application.
+description: Javier de la Peña website.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
@@ -17,7 +17,6 @@ dependencies:
   url_launcher: ^6.0.9
   flutter_svg: ^0.22.0
   timeline_list: ^0.0.3
-  html: ^0.15.0
 
 dev_dependencies:
   flutter_test:
