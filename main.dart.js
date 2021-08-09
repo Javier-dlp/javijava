@@ -57311,8 +57311,11 @@ D.VT.prototype={}
 F.CV.prototype={
 a0(a,b){return new S.u6(new F.CW(null),"Javier de la Pe\xf1a",X.aet(null,C.h6),null)}}
 F.CW.prototype={
-a0(a,b){var s=null,r=b.ao(t.w).f.a.a,q=r*0.3,p=t.E,o=T.oY(H.b([M.dg(s,B.TQ(H.b([new Z.rH(s),L.eG("",s,s),L.eG("",s,s),new Q.vK(C.ar,s)],p),s,!1),s,new S.aH(0,q,0,1/0),s,s,s,s,q),new R.vP(s),M.dg(s,B.TQ(H.b([L.eG("",s,s),new Z.vW(s),L.eG("",s,s),new Z.ta(s)],p),s,!1),s,s,s,s,s,s,r*0.6),new R.vP(s)],p),C.ar,C.ep,C.bc),n=B.TQ(H.b([new Z.rH(s),L.eG("",s,s),L.eG("",s,s),new Z.vW(s),L.eG("",s,s),L.eG("",s,s),new Z.ta(s),L.eG("",s,s),L.eG("",s,s),new Q.vK(s,s)],p),s,!1)
-return new M.vj(T.OU(r<600?n:o,1.2,s),s)}}
+a0(a,b){var s,r,q,p=null,o=b.ao(t.w).f.a.a,n=t.E
+if(o<600){s=B.TQ(H.b([new Z.rH(p),L.eG("",p,p),L.eG("",p,p),new Z.vW(p),L.eG("",p,p),L.eG("",p,p),new Z.ta(p),L.eG("",p,p),L.eG("",p,p),new Q.vK(p,p)],n),p,!1)
+o=s}else{r=o*0.3
+q=T.oY(H.b([M.dg(p,B.TQ(H.b([new Z.rH(p),L.eG("",p,p),L.eG("",p,p),new Q.vK(C.ar,p)],n),p,!1),p,new S.aH(0,r,0,1/0),p,p,p,p,r),new R.vP(p),M.dg(p,B.TQ(H.b([L.eG("",p,p),new Z.vW(p),L.eG("",p,p),new Z.ta(p)],n),p,!1),p,p,p,p,p,p,o*0.6),new R.vP(p)],n),C.ar,C.ep,C.bc)
+o=q}return new M.vj(T.OU(o,1.2,p),p)}}
 Z.rH.prototype={
 a0(a,b){var s=null,r=t.E
 return T.AK(H.b([M.dg(s,T.AK(H.b([M.dg(s,s,s,s,new S.i9(C.l,new X.AZ(new L.ri("assets/photo.jpg"),C.io),s,s,s,s,C.b1),200,s,s,200),O.mK("G'DAY, I'M JAVIER DE LA PE\xd1A",!0,C.l,20,C.cm),O.mK("Sr. Software Engineer",!1,C.l,16,C.aI)],r),C.ar),s,s,s,s,s,s,s),C.Lt,this.JK()],r),C.ar)},
