@@ -80,6 +80,7 @@ class Experience extends StatelessWidget {
     children.addAll(companiesByDate.entries.map((e) => mapEntry(e, textAlign)).toList());
 
     return ListView(
+      physics: NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       padding: EdgeInsets.only(top: 20, bottom: 20),
       children: children,
