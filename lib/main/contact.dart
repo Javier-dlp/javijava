@@ -1,5 +1,4 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:javijava/text_utils.dart';
@@ -23,8 +22,8 @@ class Contact extends StatelessWidget {
       child:  Column(
         children: [
           getPhtoto(),
-          TextUtils.getText("G'DAY, I'M JAVIER DE LA PEÑA", fontSize: TextUtils.superTitleSIze, bold: true, textAlign: TextAlign.center),
-          TextUtils.getText("Sr. Software Engineer", fontSize: TextUtils.titleSize),
+          TextUtils.getText("JAVIER DE LA PEÑA", fontSize: TextUtils.superTitleSIze, bold: true, textAlign: TextAlign.center),
+          TextUtils.getText("Engineering Manager", fontSize: TextUtils.titleSize),
         ]
       )
     );

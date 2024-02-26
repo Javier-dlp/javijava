@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:javijava/text_utils.dart';
 import 'package:timeline_list/timeline.dart';
@@ -10,7 +9,7 @@ class Experience extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    var rightPadding = size.width*.1;
+    var rightPadding = size.width*.05;
 
     return Container(
       padding: EdgeInsets.only(right: rightPadding),
@@ -31,9 +30,14 @@ class Experience extends StatelessWidget {
   List<TimelineModel> getJobs() {
     return [
       getJob(
+        TimelineItemPosition.left,
+        "Engineering Manager",
+        { "2022-Now": "DKB Code Factory" },
+      ),
+      getJob(
         TimelineItemPosition.right,
         "Full stack Developer",
-        { "2021-Now": "Creator of moviemirador.com" },
+        { "2021-2022": "Creator of moviemirador.com" },
         "https://moviemirador.com"
       ),
       getJob(
