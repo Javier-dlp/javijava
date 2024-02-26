@@ -13,8 +13,8 @@ class Summary extends StatelessWidget {
           TextUtils.getTitle("Summary"),
           Text(""),
           TextUtils.getText("""
-IT Professional with over 10 years of experience specialized on JVM BE technologies with focus on: micro-service architecture, supporting apps, and application lifecycle.
-\nI am passionate about helping teams and companies to move into faster, more reliable iterations."""),
+IT Leader with a 15 year trajectory in JVM Backend technologies, I excel in developing cloud-native, high-scalable systems and product-oriented development.\n
+My expertise lies not just in technical leadership but also in driving teams towards faster and successful project deliveries through cross-functional collaboration."""),
         ]
       )
     );

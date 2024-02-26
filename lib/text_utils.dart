@@ -1,11 +1,9 @@
-import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TextUtils {
 
-  static const double textSize = 14, titleSize = 16, superTitleSIze = 20;
+  static const double textSize = 15, titleSize = 16, superTitleSIze = 21;
 
   static Color darkBlue = Colors.lightBlue.shade800;
 
@@ -20,12 +18,12 @@ class TextUtils {
       text,
       textAlign: textAlign,
 
-      style: TextStyle(
+      style: GoogleFonts.nunito(
         fontWeight: bold ? FontWeight.w900 : FontWeight.normal,
         fontStyle: italic? FontStyle.italic : FontStyle.normal,
         color: color,
         fontSize: fontSize,
-      )
+      ),
     );
   }
 

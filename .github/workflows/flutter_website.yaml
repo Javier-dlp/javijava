@@ -18,9 +18,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Setup Flutter
-        uses: subosito/flutter-action@v1
+        uses: subosito/flutter-action@v2
         with:
-          channel: 'dev'
+          flutter-version: "3.19.1"
+          channel: 'stable'
 
       - name: Enable Flutter web
         run: flutter config --enable-web
@@ -29,7 +30,7 @@ jobs:
         run: flutter pub get
 
       - name: Build web
-        run: flutter build web --no-sound-null-safety --release
+        run: flutter build web --release
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

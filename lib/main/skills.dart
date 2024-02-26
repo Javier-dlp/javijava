@@ -1,6 +1,5 @@
 
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:javijava/text_utils.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -38,8 +37,9 @@ class Skills extends StatelessWidget {
     return Table(
       columnWidths: {0: FixedColumnWidth(160)},
       children: [
+        getSkillRow("Kotlin"),
         getSkillRow("Java"),
-        getSkillRow("Python, Dart, Kotlin"),
+        getSkillRow("Python, Dart"),
         getSkillRow("Groovy"),
         getSkillRow("Spring"),
         getSkillRow("AWS, Micro-services"),
@@ -54,14 +54,15 @@ class Skills extends StatelessWidget {
     return Table(
       columnWidths: {0: FixedColumnWidth(160), 1: FixedColumnWidth(80)},
       children: [
+        getSkillRow("Kotlin", 3),
         getSkillRow("Java", 5),
-        getSkillRow("Python, Dart, Kotlin", 2),
+        getSkillRow("Python, Dart", 2),
         getSkillRow("Groovy", 3),
-        getSkillRow("Spring", 4),
+        getSkillRow("Spring", 5),
         getSkillRow("AWS, Micro-services", 4),
         getSkillRow("Terraform", 3),
         getSkillRow("DBs", 4),
-        getSkillRow("Scrum", 4),
+        getSkillRow("Scrum", 5),
       ],
     );
   }
