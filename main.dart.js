@@ -65650,7 +65650,7 @@ q=A.pt(A.a([A.dX(p,A.Xc(A.a([new A.t7(p),A.ev("",p,p),A.ev("",p,p),new A.wR(B.az
 o=q}return new A.wj(A.Ri(o,1.2,p),p)}}
 A.t7.prototype={
 V(a){var s=null,r=t.E
-return A.C2(A.a([A.dX(s,A.C2(A.a([A.dX(s,s,s,s,new A.iJ(B.k,new A.or(new A.rF("assets/photo.jpg"),B.xB),s,s,s,s,B.f8),200,s,s,200),A.nu("JAVIER DE LA PE\xd1A",!0,B.k,21,B.eL),A.nu("Engineering Manager",!1,B.k,17,B.au)],r),B.az),s,s,s,s,s,s,s),B.Q7,this.P8()],r),B.az)},
+return A.C2(A.a([A.dX(s,A.C2(A.a([A.dX(s,s,s,s,new A.iJ(B.k,new A.or(new A.rF("assets/photo.jpg"),B.xB),s,s,s,s,B.f8),200,s,s,200),A.nu("JAVIER DE LA PE\xd1A",!0,B.k,21,B.eL),A.nu("Engineering Manager",!1,B.k,16,B.au)],r),B.az),s,s,s,s,s,s,s),B.Q7,this.P8()],r),B.az)},
 P8(){var s=this,r=null
 return A.pt(A.a([new A.id(5,r),A.oQ(!1,!0,A.ahw("https://upload.wikimedia.org/wikipedia/commons/c/c9/Linkedin.svg",40),r,!0,r,r,r,r,r,r,r,r,r,new A.RY(s),r),new A.id(1,r),A.oQ(!1,!0,A.VZ(B.DN,r,r,r,50,r),r,!0,r,r,r,r,r,r,r,r,r,new A.RZ(s),r),new A.id(1,r),A.oQ(!1,!0,A.ahw("https://upload.wikimedia.org/wikipedia/commons/a/ae/Github-desktop-logo-symbol.svg",40),r,!0,r,r,r,r,r,r,r,r,r,new A.S_(s),r),new A.id(1,r),A.oQ(!1,!0,A.VZ(B.DK,r,r,r,50,r),r,!0,r,r,r,r,r,r,r,r,r,new A.S0(s),r),new A.id(5,r)],t.E),B.az,B.ho,B.b7)},
 $1(a){return this.OS(a)},
@@ -65681,14 +65681,14 @@ $0(){return this.a.$1("https://github.com/Javier-dlp/javijava/raw/master/assets/
 $S:0}
 A.tR.prototype={
 V(a){var s=this,r=null,q=A.dr(a,r,t.w).w,p=t.N
-return A.dX(r,A.C2(A.a([A.nu("Experience",!0,$.AK(),17,B.au),A.ev("",r,r),A.at_(A.a([s.nC(B.eN,"Engineering Manager",A.at(["2022-Now","DKB Code Factory"],p,p)),s.Cs(B.is,"Full stack Developer",A.at(["2021-2022","Creator of moviemirador.com"],p,p),"https://moviemirador.com"),s.nC(B.eN,"Senior Software Engineer",A.at(["2017-2020","Auto1 Group"],p,p)),s.nC(B.is,"Technical Leader",A.at(["2017","bonial.com"],p,p)),s.nC(B.eN,"Senior Developer",A.at(["2015-2016","bonial.com","2012-2014","Protec Mobile"],p,p)),s.nC(B.is,"Junior Developer",A.at(["2008-2010","Alten","2007-2008","Tecnocom"],p,p))],t.F_),!0)],t.E),B.ct),r,r,r,r,r,new A.bw(0,0,q.a.a*0.05,0),r)},
+return A.dX(r,A.C2(A.a([A.nu("Experience",!0,$.AK(),16,B.au),A.ev("",r,r),A.at_(A.a([s.nC(B.eN,"Engineering Manager",A.at(["2022-Now","DKB Code Factory"],p,p)),s.Cs(B.is,"Full stack Developer",A.at(["2021-2022","Creator of moviemirador.com"],p,p),"https://moviemirador.com"),s.nC(B.eN,"Senior Software Engineer",A.at(["2017-2020","Auto1 Group"],p,p)),s.nC(B.is,"Technical Leader",A.at(["2017","bonial.com"],p,p)),s.nC(B.eN,"Senior Developer",A.at(["2015-2016","bonial.com","2012-2014","Protec Mobile"],p,p)),s.nC(B.is,"Junior Developer",A.at(["2008-2010","Alten","2007-2008","Tecnocom"],p,p))],t.F_),!0)],t.E),B.ct),r,r,r,r,r,new A.bw(0,0,q.a.a*0.05,0),r)},
 Cs(a,b,c,d){var s=null,r=this.P3(a,b,c,d),q=$.AK()
 return new A.ex(A.VZ(B.DI,s,s,s,s,s),q,r,a)},
 nC(a,b,c){return this.Cs(a,b,c,null)},
-P3(a,b,c,d){var s=a===B.eN?B.de:B.au,r=A.a([A.nu(b,!0,B.k,17,s)],t.E)
+P3(a,b,c,d){var s=a===B.eN?B.de:B.au,r=A.a([A.nu(b,!0,B.k,16,s)],t.E)
 B.b.v(r,c.gcQ().ew(0,new A.TO(this,s,d),t.l7).cV(0))
 return A.Xc(r,new A.bw(0,20,0,20),new A.EA(null),!0)},
-a7M(a,b,c){var s,r,q,p,o=null,n=A.kY(o,o,B.k,o,o,o,o,o,o,o,o,16,B.ad,o,B.t,o,o,!0,o,o,o,o,o,o,o,o),m=A.kY(o,o,B.k,o,o,o,o,o,o,o,o,17,o,o,B.cx,o,o,!0,o,o,o,o,o,o,o,o),l=A.kY(o,o,B.I_,o,B.ip,o,o,o,o,o,o,17,o,o,B.Q,o,o,!0,o,o,o,o,o,o,o,o),k=a.b
+a7M(a,b,c){var s,r,q,p,o=null,n=A.kY(o,o,B.k,o,o,o,o,o,o,o,o,15,B.ad,o,B.t,o,o,!0,o,o,o,o,o,o,o,o),m=A.kY(o,o,B.k,o,o,o,o,o,o,o,o,16,o,o,B.cx,o,o,!0,o,o,o,o,o,o,o,o),l=A.kY(o,o,B.I_,o,B.ip,o,o,o,o,o,o,16,o,o,B.Q,o,o,!0,o,o,o,o,o,o,o,o),k=a.b
 if(b===B.de)s=A.jv(A.a([A.jv(o,o,"   "),A.jv(o,n,a.a)],t.VO),m,k)
 else{r=c==null?o:c.length!==0
 if(r===!0){q=A.d2("[A-Za-z]+.com",!0,!1).pp(k)
@@ -65725,7 +65725,7 @@ $S:0}
 A.wR.prototype={
 V(a){var s=null,r=this.c
 if(r==null)r=B.ct
-return A.C2(A.a([A.nu("Skills",!0,$.AK(),17,B.au),A.ev("",s,s),A.dX(s,new A.mu(new A.a1h(this),s),s,s,s,s,s,s,s)],t.E),r)},
+return A.C2(A.a([A.nu("Skills",!0,$.AK(),16,B.au),A.ev("",s,s),A.dX(s,new A.mu(new A.a1h(this),s),s,s,s,s,s,s,s)],t.E),r)},
 $1(a){return this.OX(a)},
 OX(a){var s=0,r=A.Q(t.H)
 var $async$$1=A.R(function(b,c){if(b===1)return A.N(c,r)
@@ -65740,7 +65740,7 @@ break
 case 4:A.a5("Could not launch "+a)
 case 3:return A.O(null,r)}})
 return A.P($async$$1,r)},
-ht(a,b){var s=null,r=A.a([A.dX(B.cj,A.nu(a,!1,B.k,16,B.au),s,s,s,35,s,new A.bw(0,0,10,0),s)],t.zp)
+ht(a,b){var s=null,r=A.a([A.dX(B.cj,A.nu(a,!1,B.k,15,B.au),s,s,s,35,s,new A.bw(0,0,10,0),s)],t.zp)
 if(b>0)r.push(A.dX(s,this.Pv(b),s,s,s,35,s,s,s))
 return new A.ig(r)},
 i9(a){return this.ht(a,0)},
@@ -65757,7 +65757,7 @@ p=o}return A.pt(A.a([p],t.E),B.az,B.ho,B.b7)},
 $S:54}
 A.x5.prototype={
 V(a){var s=null
-return A.dX(s,A.C2(A.a([A.nu("Summary",!0,$.AK(),17,B.au),A.ev("",s,s),A.nu("IT Leader with a 15 year trajectory in JVM Backend technologies, I excel in developing cloud-native, high-scalable systems and product-oriented development.\n\nMy expertise lies not just in technical leadership but also in driving teams towards faster and successful project deliveries through cross-functional collaboration.",!1,B.k,16,B.au)],t.E),B.ct),s,s,s,s,s,s,s)}}
+return A.dX(s,A.C2(A.a([A.nu("Summary",!0,$.AK(),16,B.au),A.ev("",s,s),A.nu("IT Leader with a 15 year trajectory in JVM Backend technologies, I excel in developing cloud-native, high-scalable systems and product-oriented development.\n\nMy expertise lies not just in technical leadership but also in driving teams towards faster and successful project deliveries through cross-functional collaboration.",!1,B.k,15,B.au)],t.E),B.ct),s,s,s,s,s,s,s)}}
 A.bu.prototype={
 T(a,b){return new A.bu(this.a+b.a,this.b+b.b)},
 a5(a,b){return new A.bu(this.a-b.a,this.b-b.b)},
