@@ -1,57 +1,98 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:javijava/text_utils.dart';
-import 'package:timeline_list/timeline.dart';
-import 'package:timeline_list/timeline_model.dart';
+import 'package:timeline_list/timeline_list.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Experience extends StatelessWidget {
+  static const double wideLayoutWidth = TextUtils.wideLayoutWidth;
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
-    var rightPadding = size.width*.05;
-
-    return Container(
-      padding: EdgeInsets.only(right: rightPadding),
-      child:  Column(
+    final jobs = getJobs();
+    return LayoutBuilder(builder: (context, constraints) {
+      final minimumWidth = _naturalTimelineWidth(context, jobs);
+      final proposedPadding = constraints.maxWidth * .15;
+      final hasRoom = constraints.maxWidth - proposedPadding >= minimumWidth;
+      final rightPadding = MediaQuery.of(context).size.width >= wideLayoutWidth && hasRoom
+          ? proposedPadding : 0.0;
+      return Padding(
+        padding: EdgeInsets.only(right: rightPadding),
+        child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextUtils.getTitle("Experience"),
           Text(""),
           Timeline(
             shrinkWrap: true,
-            children: getJobs(),
+            physics: NeverScrollableScrollPhysics(),
+            properties: TimelineProperties(
+              timelinePosition: TimelinePosition.center,
+              iconSize: 36,
+              lineColor: Colors.black,
+              markerGap: 0,
+            ),
+            children: jobs,
           ),
         ]
-      )
-    );
+      ));
+    });
   }
 
-  List<TimelineModel> getJobs() {
+  double _naturalTimelineWidth(BuildContext context, List<Marker> jobs) {
+    var widest = 0.0;
+    for (final job in jobs) {
+      final card = job.child as ListView;
+      final children = (card.childrenDelegate as SliverChildListDelegate).children;
+      for (var child in children) {
+        if (child is InkWell) child = child.child!;
+        final InlineSpan span;
+        if (child is Text) {
+          span = TextSpan(text: child.data, style: DefaultTextStyle.of(context).style.merge(child.style));
+        } else if (child is RichText) {
+          span = child.text;
+        } else {
+          continue;
+        }
+        final painter = TextPainter(
+          text: span,
+          textDirection: Directionality.of(context),
+          textScaler: MediaQuery.textScalerOf(context),
+        )..layout();
+        widest = math.max(widest, painter.width);
+        painter.dispose();
+      }
+    }
+    // Two content columns plus the marker, icon gaps and timeline padding.
+    return widest * 2 + 128;
+  }
+
+  List<Marker> getJobs() {
     return [
       getJob(
-        TimelineItemPosition.left,
+        MarkerPosition.left,
         "Engineering Manager",
-        { "2022-Now": "DKB Code Factory" },
+        { "2022-Now": "DKB Code Factory" }
       ),
       getJob(
-        TimelineItemPosition.right,
-        "Full stack Developer",
+        MarkerPosition.right,
+        "Full-stack Developer",
         { "2021-2022": "Creator of moviemirador.com" },
         "https://moviemirador.com"
       ),
       getJob(
-        TimelineItemPosition.left,
+        MarkerPosition.left,
         "Senior Software Engineer",
-        { "2017-2020": "Auto1 Group" }
+        { "2017-2020": "AUTO1 Group" }
       ),
       getJob(
-        TimelineItemPosition.right,
+        MarkerPosition.right,
         "Technical Leader",
         { "2017": "bonial.com" }
       ),
       getJob(
-        TimelineItemPosition.left,
+        MarkerPosition.left,
         "Senior Developer",
         {
           "2015-2016": "bonial.com",
@@ -59,7 +100,7 @@ class Experience extends StatelessWidget {
         }
       ),
       getJob(
-        TimelineItemPosition.right,
+        MarkerPosition.right,
         "Junior Developer",
         {
           "2008-2010": "Alten",
@@ -69,17 +110,19 @@ class Experience extends StatelessWidget {
     ];
   }
 
-  TimelineModel getJob(TimelineItemPosition position, String title, Map<String, String> companiesByDate, [String? url]) {
-    return TimelineModel(
-      getCard(position, title, companiesByDate, url),
-      position: position,
-      iconBackground: TextUtils.darkBlue,
-      icon: Icon(Icons.blur_circular)
+  Marker getJob(MarkerPosition position, String title, Map<String, String> companiesByDate, [String? url]) {
+    return Marker(
+      child: getCard(position, title, companiesByDate, url),
+      position: position == MarkerPosition.left ? MarkerPosition.right : MarkerPosition.left,
+      icon: Container(
+        decoration: BoxDecoration(shape: BoxShape.circle, color: TextUtils.darkBlue),
+        child: Icon(Icons.blur_circular, color: Colors.black, size: 24),
+      )
     );
   }
 
-  Widget getCard(TimelineItemPosition position, String title, Map<String, String> companiesByDate, [String? url]) {
-    var textAlign = position == TimelineItemPosition.left ? TextAlign.right : TextAlign.left;
+  Widget getCard(MarkerPosition position, String title, Map<String, String> companiesByDate, [String? url]) {
+    var textAlign = position == MarkerPosition.left ? TextAlign.right : TextAlign.left;
     List<Widget> children = [
       TextUtils.getText(title, bold: true, fontSize: TextUtils.titleSize, textAlign: textAlign)
     ];

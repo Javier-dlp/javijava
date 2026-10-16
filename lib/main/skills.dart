@@ -23,7 +23,7 @@ class Skills extends StatelessWidget {
               return Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  constraints.maxWidth > 260 ? getSkillsTable() : getSkillsColumn()
+                  getSkillsTable(constraints.maxWidth.clamp(0.0, 260.0).toDouble())
                 ],
               );
             }
@@ -33,37 +33,28 @@ class Skills extends StatelessWidget {
     );
   }
 
-  Table getSkillsColumn() {
-    return Table(
-      columnWidths: {0: FixedColumnWidth(160)},
-      children: [
-        getSkillRow("Kotlin"),
-        getSkillRow("Java"),
-        getSkillRow("Python, Dart"),
-        getSkillRow("Groovy"),
-        getSkillRow("Spring"),
-        getSkillRow("AWS, Micro-services"),
-        getSkillRow("Terraform"),
-        getSkillRow("DBs"),
-        getSkillRow("Scrum"),
-      ],
-    );
-  }
+  static const skills = {
+    "Engineering management & coaching": 4,
+    "Architecture & code review": 4,
+    "Scrum": 5,
+    "Kotlin": 3,
+    "Java": 4,
+    "Spring / Spring Boot": 4,
+    "SQL / databases": 4,
+    "CI/CD": 4,
+    "AWS / Microservices": 4,
+  };
 
-  Table getSkillsTable() {
+  Table getSkillsColumn() => getSkillsTable(180);
+
+  Table getSkillsTable([double width = 260]) {
     return Table(
-      columnWidths: {0: FixedColumnWidth(160), 1: FixedColumnWidth(80)},
-      children: [
-        getSkillRow("Kotlin", 3),
-        getSkillRow("Java", 5),
-        getSkillRow("Python, Dart", 2),
-        getSkillRow("Groovy", 3),
-        getSkillRow("Spring", 5),
-        getSkillRow("AWS, Micro-services", 4),
-        getSkillRow("Terraform", 3),
-        getSkillRow("DBs", 4),
-        getSkillRow("Scrum", 5),
-      ],
+      columnWidths: {
+        0: FixedColumnWidth(width - 70),
+        1: FixedColumnWidth(70),
+      },
+      defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+      children: skills.entries.map((skill) => getSkillRow(skill.key, skill.value)).toList(),
     );
   }
 
@@ -71,35 +62,22 @@ class Skills extends StatelessWidget {
     await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
   }
 
-  TableRow getSkillRow(String text, [int noStars = 0]) {
-    var children = [
-      Container(
-        child: TextUtils.getText(text, textAlign: TextAlign.left),
-        padding: EdgeInsets.only(right: 10),
-        alignment: Alignment.centerLeft,
-        height: 35,
-      ),
-    ];
-    if (noStars > 0) {
-      children.add(
-        Container(
-          child: getStars(noStars),
-          height: 35,
-        )
-      );
-    }
+  TableRow getSkillRow(String text, int rating) {
     return TableRow(
-      children: children,
-    );
-  }
-
-  Widget getStars(int noStars) {
-    List<Widget> stars = [];
-    for (int i=1; i<6; i++) {
-      stars.add(i <= noStars ? Icon(Icons.circle, color: TextUtils.darkBlue, size: 16,) : Icon(Icons.circle_outlined, size: 16,));
-    }
-    return Row(
-      children: stars,
+      children: [
+        Padding(
+          padding: EdgeInsets.only(right: 10, top: 6, bottom: 6),
+          child: TextUtils.getText(text),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: List.generate(5, (index) => Icon(
+            index < rating ? Icons.circle : Icons.circle_outlined,
+            color: TextUtils.darkBlue,
+            size: 14,
+          )),
+        ),
+      ],
     );
   }
 

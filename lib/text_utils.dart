@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TextUtils {
+  static const double wideLayoutWidth = 1000;
 
   static const double textSize = 15, titleSize = 16, superTitleSIze = 21;
 
@@ -27,7 +28,11 @@ class TextUtils {
     );
   }
 
-  static Text getTitle(String text) {
-    return getText(text, fontSize: titleSize, bold:true, color: darkBlue, textAlign: TextAlign.left);
+  static Widget getTitle(String text) {
+    return Builder(builder: (context) {
+      final title = getText(text, fontSize: titleSize, bold:true, color: darkBlue, textAlign: TextAlign.left);
+      if (MediaQuery.of(context).size.width >= wideLayoutWidth) return title;
+      return Center(child: title);
+    });
   }
 }

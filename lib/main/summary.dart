@@ -13,8 +13,8 @@ class Summary extends StatelessWidget {
           TextUtils.getTitle("Summary"),
           Text(""),
           TextUtils.getText("""
-IT Leader with a 15 year trajectory in JVM Backend technologies, I excel in developing cloud-native, high-scalable systems and product-oriented development.\n
-My expertise lies not just in technical leadership but also in driving teams towards faster and successful project deliveries through cross-functional collaboration."""),
+Engineering Manager with a 20-year trajectory in JVM technologies, building cloud-native, highly scalable systems with a product-oriented approach.
+\nI combine technical leadership, coaching and cross-functional collaboration to help teams deliver software faster and more reliably."""),
         ]
       )
     );

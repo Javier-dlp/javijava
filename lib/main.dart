@@ -32,16 +32,18 @@ class MyHomePage extends StatelessWidget {
     var size = MediaQuery.of(context).size;
 
     return Scaffold(
-      body: Center(
-        heightFactor: 1.2,
-        child: size.width < 600 ? getListView() : getGridView(size),
+      body: Padding(
+        padding: EdgeInsets.all(24),
+        child: size.width < Experience.wideLayoutWidth
+            ? getListView()
+            : getGridView(size),
       ),
     );
   }
 
   ListView getListView() {
     var column = ListView(
-      padding: EdgeInsets.all(10),
+      padding: EdgeInsets.zero,
       children: [
         Contact(),
         Text(""),
@@ -58,15 +60,15 @@ class MyHomePage extends StatelessWidget {
     return column;
   }
 
-  Row getGridView(Size size) {
+  Widget getGridView(Size size) {
     var row = Row(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Container(
-          width: size.width*.3,
-          constraints: BoxConstraints(maxWidth: size.width*.3),
+        Expanded(
+          flex: 1,
           child: ListView(
+            padding: EdgeInsets.zero,
             children: [
               Contact(),
               Text(""),
@@ -75,12 +77,12 @@ class MyHomePage extends StatelessWidget {
             ],
           )
         ),
-        Spacer(),
-        Container(
-          width: size.width*.6,
+        SizedBox(width: 32),
+        Expanded(
+          flex: 2,
           child: ListView(
+            padding: EdgeInsets.zero,
             children: [
-              Text(""),
               Summary(),
               Text(""),
               Text(""),
@@ -88,7 +90,6 @@ class MyHomePage extends StatelessWidget {
             ],
           )
         ),
-        Spacer(),
       ],
     );
     return row;
